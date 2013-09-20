@@ -7,6 +7,7 @@ Requirements
 * `matplotlib` (tested only 1.3.0)
 * `healpy`, needs this patch to be applied to `projaxes.py`:
 
+```python
     diff --git a/healpy/projaxes.py b/healpy/projaxes.py
     index 354fd99..9818de9 100644
     --- a/healpy/projaxes.py
@@ -20,6 +21,7 @@ Requirements
              s = self.scatter(x, y, *args, **kwds)
              if save_input_data:
                  if not hasattr(self, '_scatter_data'):
+```
 
 or get the `icocmb` branch from the `healpy` repository:
 
